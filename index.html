@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawCare - Premium Dog Pet Care Services</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md fixed w-full z-50">
+    <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center space-x-2">
+        <i class="fas fa-paw text-orange-500 text-2xl"></i>
+        <span class="text-xl font-bold">PawCare</span>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8">
+        <a href="#home" class="hover:text-orange-500 transition">Home</a>
+        <a href="#services" class="hover:text-orange-500 transition">Services</a>
+        <a href="#reviews" class="hover:text-orange-500 transition">Reviews</a>
+        <a href="#team" class="hover:text-orange-500 transition">Our Team</a>
+        <a href="#gallery" class="hover:text-orange-500 transition">Gallery</a>
+        <a href="#blog" class="hover:text-orange-500 transition">Blog</a>
+        <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="md:hidden text-gray-600 focus:outline-none">
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+
+      <!-- Book Appointment Button -->
+      <a href="#booking" class="hidden md:block bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full transition">Book Appointment</a>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+      <div class="flex flex-col space-y-3">
+        <a href="#home" class="hover:text-orange-500 transition">Home</a>
+        <a href="#services" class="hover:text-orange-500 transition">Services</a>
+        <a href="#reviews" class="hover:text-orange-500 transition">Reviews</a>
+        <a href="#team" class="hover:text-orange-500 transition">Our Team</a>
+        <a href="#gallery" class="hover:text-orange-500 transition">Gallery</a>
+        <a href="#blog" class="hover:text-orange-500 transition">Blog</a>
+        <a href="#contact" class="hover:text-orange-500 transition">Contact</a>
+        <a href="#booking" class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-full transition text-center">Book Appointment</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-20 bg-gradient-to-r from-orange-50 to-amber-50">
+    <div class="container mx-auto px-4 py-16 md:py-24 flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">Premium Care for Your Furry Friend</h1>
+        <p class="text-lg mb-6 text-gray-600">Professional dog grooming, boarding, training, and healthcare services. Because your pet deserves the best.</p>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <a href="#services" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full transition text-center">Our Services</a>
+          <a href="#booking" class="border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-3 rounded-full transition text-center">Book Now</a>
+        </div>
+      </div>
+      <div class="md:w-1/2 flex justify-center">
+        <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Happy dog" class="rounded-lg shadow-xl float-animation">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Our Premium Services</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">We offer a comprehensive range of services to keep your dog healthy, happy, and well-cared for.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service 1 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <i class="fas fa-cut text-orange-500 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Grooming & Spa</h3>
+          <p class="text-gray-600 mb-4">Professional grooming services including baths, haircuts, nail trimming, and relaxing spa treatments.</p>
+          <a href="#booking" class="text-orange-500 font-medium hover:underline">Book Grooming →</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <i class="fas fa-home text-orange-500 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Boarding & Daycare</h3>
+          <p class="text-gray-600 mb-4">Safe and comfortable boarding facilities with 24/7 supervision and fun daycare activities.</p>
+          <a href="#booking" class="text-orange-500 font-medium hover:underline">Book Boarding →</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <i class="fas fa-graduation-cap text-orange-500 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Training Programs</h3>
+          <p class="text-gray-600 mb-4">Professional obedience training, behavioral correction, and puppy socialization classes.</p>
+          <a href="#booking" class="text-orange-500 font-medium hover:underline">Book Training →</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <i class="fas fa-stethoscope text-orange-500 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Healthcare</h3>
+          <p class="text-gray-600 mb-4">Routine checkups, vaccinations, dental care, and nutritional counseling for optimal health.</p>
+          <a href="#booking" class="text-orange-500 font-medium hover:underline">Book Checkup →</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <i class="fas fa-walking text-orange-500 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Dog Walking</h3>
+          <p class="text-gray-600 mb-4">Regular exercise and outdoor adventures with our professional dog walkers.</p>
+          <a href="#booking" class="text-orange-500 font-medium hover:underline">Book Walker →</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="bg-gray-50 rounded-xl p-6 shadow-md hover:shadow-lg transition">
+          <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+            <i class="fas fa-bone text-orange-500 text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-2">Nutrition & Diet</h3>
+          <p class="text-gray-600 mb-4">Personalized nutrition plans and premium food options tailored to your dog's needs.</p>
+          <a href="#booking" class="text-orange-500 font-medium hover:underline">Book Consultation →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews Section -->
+  <section id="reviews" class="py-16 bg-orange-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Happy Pet Parents</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Don't just take our word for it. Here's what our satisfied customers have to say.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Review 1 -->
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Sarah Johnson</h4>
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"The grooming service at PawCare is exceptional! My golden retriever has never looked better. The staff is professional and caring."</p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Michael Chen</h4>
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"We've used their boarding service multiple times. Our beagle loves it there! The facilities are clean and the staff is amazing."</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Emily Rodriguez</h4>
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"The training program transformed our rescue dog. The trainers are patient and knowledgeable. Highly recommend!"</p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">David Wilson</h4>
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"The healthcare services are top-notch. Regular checkups have kept our senior dog healthy and active. Thank you, PawCare!"</p>
+        </div>
+
+        <!-- Review 5 -->
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Jessica Taylor</h4>
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"The dog walking service is a lifesaver! Our walker is reliable and our pup always comes back happy and tired."</p>
+        </div>
+
+        <!-- Review 6 -->
+        <div class="bg-white rounded-xl p-6 shadow-md">
+          <div class="flex items-center mb-4">
+            <img src="https://randomuser.me/api/portraits/men/91.jpg" alt="Customer" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <h4 class="font-bold">Robert Thompson</h4>
+              <div class="text-yellow-400">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-600">"The nutrition consultation helped our overweight lab shed pounds. The personalized diet plan was easy to follow and effective."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Meet Our Expert Team</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Our passionate professionals are dedicated to providing the best care for your furry friends.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Team Member 1 -->
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team member" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-xl font-bold mb-1">Dr. Emily Carter</h3>
+          <p class="text-orange-500 mb-2">Head Veterinarian</p>
+          <p class="text-gray-600 text-sm">15 years of experience in small animal medicine</p>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team member" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-xl font-bold mb-1">Mark Johnson</h3>
+          <p class="text-orange-500 mb-2">Master Groomer</p>
+          <p class="text-gray-600 text-sm">Certified professional groomer with 10 years experience</p>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team member" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-xl font-bold mb-1">Sarah Williams</h3>
+          <p class="text-orange-500 mb-2">Lead Trainer</p>
+          <p class="text-gray-600 text-sm">Certified dog behaviorist and obedience trainer</p>
+        </div>
+
+        <!-- Team Member 4 -->
+        <div class="text-center">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Team member" class="w-48 h-48 rounded-full mx-auto mb-4 object-cover">
+          <h3 class="text-xl font-bold mb-1">David Miller</h3>
+          <p class="text-orange-500 mb-2">Facility Manager</p>
+          <p class="text-gray-600 text-sm">Ensures safe and clean environment for all pets</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-16 bg-orange-50">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">PawCare Gallery</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Take a look at our facilities and happy dogs enjoying our services.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dog" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dog" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dog" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dog" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dog" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dog" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1534361960057-19889db96291?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dog" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-md">
+          <img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Dog" class="w-full h-64 object-cover hover:scale-105 transition duration-300">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">PawCare Blog</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Helpful tips, advice, and stories about dog care and wellbeing.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Blog Post 1 -->
+        <div class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Blog post" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-orange-500 text-sm">May 15, 2023</span>
+            <h3 class="text-xl font-bold my-2">5 Tips for Summer Dog Care</h3>
+            <p class="text-gray-600 mb-4">Keep your furry friend safe and comfortable during the hot summer months with these essential tips.</p>
+            <a href="#" class="text-orange-500 font-medium hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Blog post" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-orange-500 text-sm">April 28, 2023</span>
+            <h3 class="text-xl font-bold my-2">Understanding Dog Nutrition</h3>
+            <p class="text-gray-600 mb-4">Learn about the essential nutrients your dog needs and how to choose the right food for their age and breed.</p>
+            <a href="#" class="text-orange-500 font-medium hover:underline">Read More →</a>
+          </div>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="border rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Blog post" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <span class="text-orange-500 text-sm">April 10, 2023</span>
+            <h3 class="text-xl font-bold my-2">Training Your New Puppy</h3>
+            <p class="text-gray-600 mb-4">Essential training techniques to help your new puppy become a well-behaved member of your family.</p>
+            <a href="#" class="text-orange-500 font-medium hover:underline">Read More →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-10">
+        <a href="#" class="inline-block border-2 border-orange-500 text-orange-500 hover:bg-orange-50 px-6 py-3 rounded-full transition">View All Blog Posts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking" class="py-16 bg-orange-50">
+    <div class="container mx-auto px-4">
+      <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-lg overflow-hidden">
+        <div class="md:flex">
+          <div class="md:w-1/2 bg-orange-500 text-white p-8">
+            <h2 class="text-2xl font-bold mb-4">Book an Appointment</h2>
+            <p class="mb-6">Schedule a service for your dog today. Our team is ready to provide exceptional care.</p>
+            <div class="space-y-4">
+              <div class="flex items-center">
+                <i class="fas fa-phone-alt mr-3"></i>
+                <span>(123) 456-7890</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-envelope mr-3"></i>
+                <span>info@pawcare.com</span>
+              </div>
+              <div class="flex items-center">
+                <i class="fas fa-map-marker-alt mr-3"></i>
+                <span>123 Pet Street, Dogville</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="md:w-1/2 p-8">
+            <form id="booking-form">
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2" for="name">Your Name</label>
+                <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+              </div>
+
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2" for="email">Email</label>
+                <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+              </div>
+
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2" for="service">Service</label>
+                <select id="service" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                  <option value="">Select a service</option>
+                  <option value="grooming">Grooming & Spa</option>
+                  <option value="boarding">Boarding & Daycare</option>
+                  <option value="training">Training Programs</option>
+                  <option value="healthcare">Healthcare</option>
+                  <option value="walking">Dog Walking</option>
+                  <option value="nutrition">Nutrition & Diet</option>
+                </select>
+              </div>
+
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2" for="date">Preferred Date</label>
+                <input type="date" id="date" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+              </div>
+
+              <div class="mb-4">
+                <label class="block text-gray-700 mb-2" for="message">Additional Information</label>
+                <textarea id="message" rows="3" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 rounded-lg transition">Book Appointment</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">Contact Us</h2>
+        <p class="text-gray-600 max-w-2xl mx-auto">Have questions or need more information? We're here to help.</p>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div class="text-center p-6 bg-orange-50 rounded-lg">
+            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-map-marker-alt text-orange-500 text-xl"></i>
+            </div>
+            <h3 class="font-bold mb-2">Visit Us</h3>
+            <p class="text-gray-600">123 Pet Street<br>Dogville, DV 12345</p>
+          </div>
+
+          <div class="text-center p-6 bg-orange-50 rounded-lg">
+            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-phone-alt text-orange-500 text-xl"></i>
+            </div>
+            <h3 class="font-bold mb-2">Call Us</h3>
+            <p class="text-gray-600">(123) 456-7890<br>Mon-Fri: 8am-6pm<br>Sat-Sun: 9am-4pm</p>
+          </div>
+
+          <div class="text-center p-6 bg-orange-50 rounded-lg">
+            <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <i class="fas fa-envelope text-orange-500 text-xl"></i>
+            </div>
+            <h3 class="font-bold mb-2">Email Us</h3>
+            <p class="text-gray-600">info@pawcare.com<br>support@pawcare.com</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-100 rounded-xl p-8">
+          <div class="max-w-2xl mx-auto">
+            <form id="contact-form">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div>
+                  <label class="block text-gray-700 mb-2" for="contact-name">Name</label>
+                  <input type="text" id="contact-name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                </div>
+                <div>
+                  <label class="block text-gray-700 mb-2" for="contact-email">Email</label>
+                  <input type="email" id="contact-email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+                </div>
+              </div>
+
+              <div class="mb-6">
+                <label class="block text-gray-700 mb-2" for="subject">Subject</label>
+                <input type="text" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+              </div>
+
+              <div class="mb-6">
+                <label class="block text-gray-700 mb-2" for="message">Message</label>
+                <textarea id="contact-message" rows="5" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500" required></textarea>
+              </div>
+
+              <button type="submit" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg transition">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-12">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div>
+          <div class="flex items-center space-x-2 mb-4">
+            <i class="fas fa-paw text-orange-500 text-2xl"></i>
+            <span class="text-xl font-bold">PawCare</span>
+          </div>
+          <p class="text-gray-400">Premium care for your furry friends. Professional services with love and compassion.</p>
+          <div class="flex space-x-4 mt-4">
+            <a href="#" class="text-gray-400 hover:text-orange-500 transition"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-gray-400 hover:text-orange-500 transition"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-gray-400 hover:text-orange-500 transition"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-gray-400 hover:text-orange-500 transition"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="#home" class="text-gray-400 hover:text-orange-500 transition">Home</a></li>
+            <li><a href="#services" class="text-gray-400 hover:text-orange-500 transition">Services</a></li>
+            <li><a href="#team" class="text-gray-400 hover:text-orange-500 transition">Our Team</a></li>
+            <li><a href="#gallery" class="text-gray-400 hover:text-orange-500 transition">Gallery</a></li>
+            <li><a href="#blog" class="text-gray-400 hover:text-orange-500 transition">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-4">Services</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Grooming & Spa</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Boarding & Daycare</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Training Programs</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Healthcare</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-orange-500 transition">Dog Walking</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-lg font-bold mb-4">Newsletter</h3>
+          <p class="text-gray-400 mb-4">Subscribe to get updates on pet care tips and special offers.</p>
+          <form id="newsletter-form" class="flex">
+            <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg text-gray-800 w-full focus:outline-none">
+            <button type="submit" class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-r-lg transition">
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
+        <p>&copy; 2023 PawCare. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Message Modal -->
+  <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 hidden">
+    <div class="bg-white rounded-lg p-8 max-w-md w-full">
+      <div class="text-center">
+        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+          <i class="fas fa-check text-green-500 text-2xl"></i>
+        </div>
+        <h3 class="text-xl font-bold mb-2">Success!</h3>
+        <p class="text-gray-600 mb-6">Your message has been sent successfully. We'll get back to you soon.</p>
+        <button id="close-modal" class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-lg transition">Close</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

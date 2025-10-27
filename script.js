@@ -1,58 +1,54 @@
+const menuBtn = document.getElementById("menu-btn");
+const navLinks = document.getElementById("nav-links");
+const menuBtnIcon = menuBtn.querySelector("i");
 
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-    // Close mobile menu when clicking on a link
-    const mobileLinks = mobileMenu.querySelectorAll('a');
-    mobileLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-      });
-    });
-    // Form submissions
-    const bookingForm = document.getElementById('booking-form');
-    const contactForm = document.getElementById('contact-form');
-    const newsletterForm = document.getElementById('newsletter-form');
-    const successModal = document.getElementById('success-modal');
-    const closeModal = document.getElementById('close-modal');
+menuBtn.addEventListener("click", (e) => {
+  navLinks.classList.toggle("open");
 
-    function showModal() {
-      successModal.classList.remove('hidden');
-    }
+  const isOpen = navLinks.classList.contains("open");
+  menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+});
 
-    function hideModal() {
-      successModal.classList.add('hidden');
-    }
-    closeModal.addEventListener('click', hideModal);
-    bookingForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      showModal();
-      bookingForm.reset();
-    });
-    contactForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      showModal();
-      contactForm.reset();
-    });
-    newsletterForm.addEventListener('submit', (e) => {
-      e.preventDefault();
-      showModal();
-      newsletterForm.reset();
-    });
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          window.scrollTo({
-            top: target.offsetTop - 80,
-            behavior: 'smooth'
-          });
-        }
-      });
-    });
-  
+navLinks.addEventListener("click", (e) => {
+  navLinks.classList.remove("open");
+  menuBtnIcon.setAttribute("class", "ri-menu-line");
+});
+
+const scrollRevealOption = {
+  distance: "50px",
+  origin: "bottom",
+  duration: 1000,
+};
+
+// header container
+ScrollReveal().reveal(".header__container .section__subheader", {
+  ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".header__container h1", {
+  ...scrollRevealOption,
+  delay: 500,
+});
+
+ScrollReveal().reveal(".header__container .btn", {
+  ...scrollRevealOption,
+  delay: 1000,
+});
+
+// room container
+ScrollReveal().reveal(".room__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+// feature container
+ScrollReveal().reveal(".feature__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});
+
+// news container
+ScrollReveal().reveal(".news__card", {
+  ...scrollRevealOption,
+  interval: 500,
+});

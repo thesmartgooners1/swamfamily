@@ -372,22 +372,31 @@
     })
   </script>
 
-   <section class="book">
-    <div class="container flex_space">
-      <div class="text">
-        <h1> <span>Book </span> Your Rooms </h1>
-      </div>
-      <div class="form">
-        <form class="grid">
-          <input type="date" placeholder="Araival Date">
-          <input type="date" placeholder="Departure Date">
-          <input type="number" placeholder="Adults">
-          <input type="number" placeholder="Childern">
-          <input type="submit" value="CHECK AVAILABILITY">
-        </form>
-      </div>
+<section class="book">
+  <div class="container flex_space">
+    <div class="text">
+      <h1><span>Book </span>Your Rooms</h1>
     </div>
-  </section>
+    <div class="form">
+      <form class="grid">
+        <label for="arrival">Arrival Date</label>
+        <input type="date" id="arrival" name="arrival">
+
+        <label for="departure">Departure Date</label>
+        <input type="date" id="departure" name="departure">
+
+        <label for="adults">Adults</label>
+        <input type="number" id="adults" name="adults" placeholder="Adults">
+
+        <label for="children">Children</label>
+        <input type="number" id="children" name="children" placeholder="Children">
+
+        <input type="submit" value="CHECK AVAILABILITY">
+      </form>
+    </div>
+  </div>
+</section>
+
 
 
 

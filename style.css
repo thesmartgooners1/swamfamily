@@ -323,7 +323,7 @@ nav {
 }
 
 .service {
-  background-image: url("assets/service.jpg");
+  background-image: url("service.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -425,7 +425,7 @@ nav {
     minmax(1rem, 1fr)
     minmax(0, var(--max-width))
     minmax(1rem, 1fr);
-  background-image: url("assets/explore.jpg");
+  background-image: url("explore.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
